@@ -7,5 +7,5 @@ $(function () {
 
 $(window).bind('storage', function () {
     console.log('storage changed');
-    $('.value').val(localStorage.getItem('value'));
+    $('.value').html(localStorage.getItem('value'));
 });
