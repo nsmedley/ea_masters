@@ -1,10 +1,11 @@
 $(function () {
     $(".valueInput").on('keyup blur', function () {
-        sessionStorage.setItem('value', $(".valueInput").val());
+        localStorage.setItem('value', $(".valueInput").val());
         console.log('update');
     });
 });
 
 $(window).bind('storage', function () {
-    alert('storage changed');
+    console.log('storage changed');
+    $('.value').val(localStorage.getItem('value'));
 });
