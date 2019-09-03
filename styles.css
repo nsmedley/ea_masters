@@ -20,3 +20,10 @@ input {
     position: absolute;
     transform: translateX(-50%);
 }
+
+.value {
+        color:#fff;
+        font-weight: 400;
+        font-size: 70px;
+        text-align: center;
+}
